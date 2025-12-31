@@ -80,22 +80,15 @@ const Landing: React.FC<LandingProps> = ({ user }) => {
 
             {/* Upcoming Appointments */}
             <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col hover:shadow-2xl transition-shadow">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Upcoming Appointments</h2>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
-                  <span>May 20, 2025</span>
-                  <span className="text-blue-600 font-medium">Checkup</span>
-                </li>
-                <li className="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
-                  <span>May 25, 2025</span>
-                  <span className="text-blue-600 font-medium">Lab Test</span>
-                </li>
-                <li className="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
-                  <span>June 2, 2025</span>
-                  <span className="text-blue-600 font-medium">Consultation</span>
-                </li>
-              </ul>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                Upcoming Appointments
+              </h2>
+
+              <div className="flex flex-1 items-center justify-center text-gray-500">
+                <p className="text-sm">No upcoming appointments</p>
+              </div>
             </div>
+
           </div>
 
           {/* Announcements & Hotlines */}
