@@ -11,6 +11,7 @@ import Billing from './pages/Billing';
 import HelpCenter from './pages/HelpCenter';
 import Settings from './pages/Settings';
 import { User } from './types';
+import Test from './pages/Test';
 
 const App: React.FC = () => {
   const [user] = useState<User>({ name: '', email: '' });
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <div>
         <Routes>
           <Route path='/' element={<Index />} />
+          <Route path='/test' element={<Test />} />
           <Route path='/login' element={<Login />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/medicalrecord' element={<MedicalRecord />} />
